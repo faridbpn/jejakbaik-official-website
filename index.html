@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jejak Baik</title>
-
+  <script src="https://unpkg.com/scrollreveal"></script>
   <!-- 
     - favicon
   -->
@@ -118,31 +118,24 @@
       <!-- 
         - #HERO
       -->
-
       <section class="hero" id="home" style="background-image: url('./assets/images/hero-bg.jpg')">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <p class="hero-subtitle">Jejak Baik</p>
-
-            <h2 class="h1 hero-title">Selamat Datang! </h2>
-
-            <p class="hero-text">Organisasi kami bertujuan untuk membagikan kebahagiaan kepada orang lain</p>
-
-            <button class="btn"><a href="https://www.instagram.com/jejakbaikorg/" target="_blank">Instagram Kami</button>
-
+        <div class="container" id="hero-container">
+          <div class="hero-content" id="hero-content">
+            <p class="hero-subtitle" id="hero-subtitle">Jejak Baik</p>
+            <h2 class="h1 hero-title" id="hero-title">Selamat Datang!</h2>
+            <p class="hero-text" id="hero-text">
+              “di mana kalian dapat membuat jejak-jejak baik kalian dimulai dengan melakukan hal-hal kecil”
+            </p>
+            <button class="btn" id="hero-button">
+              <a href="https://www.instagram.com/jejakbaikorg/" target="_blank">Instagram Kami</a>
+            </button>
           </div>
-
-          <figure class="hero-banner">
-            <img src="/assets/images/jejakbaikutama.png" width="720" height="500" alt="" aria-hidden="true"
-              class="w-100 hero-img-bg">
+          <figure class="hero-banner" id="hero-banner">
+            <img src="/assets/images/jejakbaikutama.png" width="720" height="500" alt="Jejak Baik"
+              class="w-100 hero-img-bg" id="hero-image">
           </figure>
-
         </div>
       </section>
-
-
 
 
 
@@ -174,8 +167,7 @@
                 <h3 class="h3 card-title">Volunteer</h3>
             
                 <p class="card-text">
-                  Melalui program volunteer, kami mengajak masyarakat sekitar terlibat dalam aksi sosial, dari bantuan kemanusiaan hingga pemberdayaan ekonomi.
-                  Bersama relawan, kami berupaya menciptakan perubahan berarti.             
+                  “Melalui program volunteer, JejakBaik mengajak anak-anak muda untuk meninggalkan jejak yang baik di masyarakat dengan memberikan kesempatan untuk memulai melakukan aksi-aksi sosial.”           
                 </p>
             
                 <img src="/assets/images/berbagi.jpg" width="300" height="300" loading="lazy" 
@@ -315,59 +307,80 @@
         - #ABOUT
       -->
 
-      <section class="section section-divider gray about" id="about">
-        <div class="container">
-
-          <div class="about-banner">
-            <img src="./assets/images/jejak baik banner kecil.png" width="509" height="459" loading="lazy" alt="Burger with Drinks"
-              class="w-100 about-img">
+      <!DOCTYPE html>
+      <html lang="id">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jejak Baik</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <style>
+          .btn a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 10px 20px;
+          }
+        </style>
+      </head>
+      <body>
+        <section class="hero" id="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+          <div class="container" id="hero-container">
+            <div class="hero-content" id="hero-content">
+              <p class="hero-subtitle" id="hero-subtitle">Jejak Baik</p>
+              <h2 class="h1 hero-title" id="hero-title">Selamat Datang!</h2>
+              <p class="hero-text" id="hero-text">
+                “di mana kalian dapat membuat jejak-jejak baik kalian dimulai dengan melakukan hal-hal kecil”
+              </p>
+              <button class="btn" id="hero-button">
+                <a href="https://www.instagram.com/jejakbaikorg/" target="_blank">Instagram Kami</a>
+              </button>
+            </div>
+            <figure class="hero-banner" id="hero-banner">
+              <img src="/assets/images/jejakbaikutama.png" width="720" height="500" alt="Jejak Baik"
+                class="w-100 hero-img-bg" id="hero-image">
+            </figure>
           </div>
-
-          <div class="about-content">
-
-            <h2 class="h2 section-title">
-              <span class="span">Jejak Baik,</span>
-              Berbagi Kebahagiaan Untuk Semua!
-            </h2>
-          
-            <p class="section-text">
-              Jejak Baik adalah organisasi yang berdedikasi untuk menebarkan kebaikan dan kebahagiaan kepada masyarakat. 
-              Dari kegiatan sosial, bantuan kemanusiaan, hingga program pendidikan, kami hadir untuk membawa perubahan positif 
-              bagi mereka yang membutuhkan.
-            </p>
-          
-            <ul class="about-list">
-          
-              <li class="about-item">
-                <ion-icon name="checkmark-outline"></ion-icon>
-                <span class="span">Program Donasi dan Bantuan Sosial</span>
-              </li>
-          
-              <li class="about-item">
-                <ion-icon name="checkmark-outline"></ion-icon>
-                <span class="span">Kegiatan Edukasi dan Pengembangan Diri</span>
-              </li>
-          
-              <li class="about-item">
-                <ion-icon name="checkmark-outline"></ion-icon>
-                <span class="span">Aksi Peduli Lingkungan dan Kesehatan</span>
-              </li>
-          
-              <li class="about-item">
-                <ion-icon name="checkmark-outline"></ion-icon>
-                <span class="span">Relawan dan Komunitas yang Solid</span>
-              </li>
-          
-            </ul>
-          
-            <button class="btn btn-hover"><a href="tel:6282112780145">Bergabung Bersama Kami</a></button>
-          
+        </section>
+      
+        <section class="section section-divider gray about" id="about">
+          <div class="container" id="about-container">
+            <div class="about-banner" id="about-banner">
+              <img src="./assets/images/jejak baik banner kecil.png" width="509" height="459" loading="lazy" alt="Jejak Baik"
+                class="w-100 about-img" id="about-image">
+            </div>
+            <div class="about-content" id="about-content">
+              <h2 class="h2 section-title" id="about-title">
+                <span class="span">Jejak Baik,</span>
+                Berbagi Kebahagiaan Untuk Semua!
+              </h2>
+              <p class="section-text" id="about-text">
+                Jejak Baik adalah organisasi non profit yang berdedikasi untuk memberikan kesempatan kepada anak-anak muda
+                untuk memulai meninggalkan jejak yang baik di masyarakat dengan melakukan hal-hal kecil namun bermanfaat.
+              </p>
+              <ul class="about-list" id="about-list">
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span class="span">Program Donasi dan Bantuan Sosial</span>
+                </li>
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span class="span">Kegiatan Edukasi dan Pengembangan Diri</span>
+                </li>
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span class="span">Aksi Peduli Lingkungan dan Kesehatan</span>
+                </li>
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span class="span">Relawan dan Komunitas yang Solid</span>
+                </li>
+              </ul>
+              <button class="btn btn-hover" id="about-button"><a href="tel:6282112780145">Bergabung Bersama Kami</a></button>
+            </div>
           </div>
-          
-
-        </div>
-      </section>
-
+        </section>
 
 
 
@@ -375,124 +388,124 @@
         - #TESTIMONIALS
       -->
 
-      <section class="section section-divider white testi" id="testi">
-        <div class="container">
+        <section class="section section-divider white testi" id="testi">
+          <div class="container">
 
-          <p class="section-subtitle">Testimoni</p>
+            <p class="section-subtitle">Testimoni</p>
 
-          <h2 class="h2 section-title">
-            Apa Kata Mereka <span class="span">Tentang Kami</span>
-          </h2>
+            <h2 class="h2 section-title">
+              Apa Kata Mereka <span class="span">Tentang Kami</span>
+            </h2>
 
-          <p class="section-text">
-            Tanggapan yang kami dapat setelah kami menjalankan program jejak baik kepada mereka
-          </p>
+            <p class="section-text">
+              Tanggapan mereka setelah berpartisipasi menjadi relawan Jejak Baik
+            </p>
 
-          <ul class="testi-list has-scrollbar">
+            <ul class="testi-list has-scrollbar">
 
-            <li class="testi-item">
-              <div class="testi-card">
+              <li class="testi-item">
+                <div class="testi-card">
 
-                <div class="profile-wrapper">
+                  <div class="profile-wrapper">
 
-                  <figure class="avatar">
-                    <img src="./assets/images/testi 1.png" width="80" height="80" loading="lazy" alt="Dina">
-                  </figure>
+                    <figure class="avatar">
+                      <img src="./assets/images/testi 1.png" width="80" height="80" loading="lazy" alt="Dina">
+                    </figure>
 
-                  <div>
-                    <h3 class="h4 testi-name">Aurin</h3>
+                    <div>
+                      <h3 class="h4 testi-name">Aurin</h3>
 
-                    <p class="testi-title">A Member of Jejak Baik</p>
+                      <p class="testi-title">A Member of Jejak Baik</p>
+                    </div>
+
+                  </div>
+
+                  <blockquote class="testi-text">
+                    "Rasanya pertama kali buat volunteer gini seru banget sih, mulai dari preparation sampe bagi-baginya seru dan ngeliat orang-orang seneng karena kita berbagi itu jadi ikut seneng juga. Tentunya manfaat buat aku yaa dapat pengalaman baru dongg ini juga ngajarin aku buat selalu bersyukur sama apa yang udah aku punya dan ngajarin aku untuk selalu berbagi. Kalo untuk masyarakat tentu dengan kita berbagi membantu masyarakat banget dong apalagi yang kurang mampu
+                    ..."
+                  </blockquote>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
                   </div>
 
                 </div>
+              </li>
 
-                <blockquote class="testi-text">
-                  "Rasanya pertama kali buat volunteer gini seru banget sih, mulai dari preparation sampe bagi-baginya seru dan ngeliat orang-orang seneng karena kita berbagi itu jadi ikut seneng juga. Tentunya manfaat buat aku yaa dapat pengalaman baru dongg ini juga ngajarin aku buat selalu bersyukur sama apa yang udah aku punya dan ngajarin aku untuk selalu berbagi. Kalo untuk masyarakat tentu dengan kita berbagi membantu masyarakat banget dong apalagi yang kurang mampu
-                   ..."
-                </blockquote>
+              <li class="testi-item">
+                <div class="testi-card">
 
-                <div class="rating-wrapper">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
+                  <div class="profile-wrapper">
 
-              </div>
-            </li>
+                    <figure class="avatar">
+                      <img src="./assets/images/testi 2.png" width="80" height="80" loading="lazy" alt="Sora Algamer">
+                    </figure>
 
-            <li class="testi-item">
-              <div class="testi-card">
+                    <div>
+                      <h3 class="h4 testi-name">Sora Algamer</h3>
 
-                <div class="profile-wrapper">
+                      <p class="testi-title">CEO at GDSC</p>
+                    </div>
 
-                  <figure class="avatar">
-                    <img src="./assets/images/testi 2.png" width="80" height="80" loading="lazy" alt="Sora Algamer">
-                  </figure>
+                  </div>
 
-                  <div>
-                    <h3 class="h4 testi-name">Sora Algamer</h3>
+                  <blockquote class="testi-text">
+                    "Today was an unforgettable experience with Jejak Baik! Being part of a movement that spreads kindness and joy to those in need truly warms my heart. Giving is not just about helping others—it’s about creating hope, sharing smiles, and building a better community together. I feel so inspired to continue making a difference, 
+                    no matter how small. Thank you, Jejak Baik, for reminding me that kindness always comes back in beautiful ways! 💕✨"
+                  </blockquote>
 
-                    <p class="testi-title">CEO at GDSC</p>
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
                   </div>
 
                 </div>
+              </li>
 
-                <blockquote class="testi-text">
-                  "Today was an unforgettable experience with Jejak Baik! Being part of a movement that spreads kindness and joy to those in need truly warms my heart. Giving is not just about helping others—it’s about creating hope, sharing smiles, and building a better community together. I feel so inspired to continue making a difference, 
-                  no matter how small. Thank you, Jejak Baik, for reminding me that kindness always comes back in beautiful ways! 💕✨"
-                </blockquote>
+              <li class="testi-item">
+                <div class="testi-card">
 
-                <div class="rating-wrapper">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
+                  <div class="profile-wrapper">
 
-              </div>
-            </li>
+                    <figure class="avatar">
+                      <img src="./assets/images/testi 3.png" width="80" height="80" loading="lazy" alt="Anna">
+                    </figure>
 
-            <li class="testi-item">
-              <div class="testi-card">
+                    <div>
+                      <h3 class="h4 testi-name">Anna</h3>
 
-                <div class="profile-wrapper">
+                      <p class="testi-title">A Student</p>
+                    </div>
 
-                  <figure class="avatar">
-                    <img src="./assets/images/testi 3.png" width="80" height="80" loading="lazy" alt="Anna">
-                  </figure>
+                  </div>
 
-                  <div>
-                    <h3 class="h4 testi-name">Anna</h3>
+                  <blockquote class="testi-text">
+                    "Yang aku rasakan hari ini adalah senang sekali karena bisa ikut berpartisipasi di Jejak Baik debut event ini!! Dan juga serunya bener-bener dapet banget 🤩 Manfaat untuk aku, aku bisa termotivasi untuk terus berbagi di lingkungan sekitarku dan juga masyarakat sekitar yang membutuhkan dapat terbantu dengan adanya Jejak Baik ini. Jejak Baik akan selalu jadi pengalaman seru aku buat ke depannya!! Sukses terus Jejak Baik 
+                    😘🤩💚🤍"
+                  </blockquote>
 
-                    <p class="testi-title">A Student</p>
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
                   </div>
 
                 </div>
+              </li>
 
-                <blockquote class="testi-text">
-                  "Yang aku rasakan hari ini adalah senang sekali karena bisa ikut berpartisipasi di Jejak Baik debut event ini!! Dan juga serunya bener-bener dapet banget 🤩 Manfaat untuk aku, aku bisa termotivasi untuk terus berbagi di lingkungan sekitarku dan juga masyarakat sekitar yang membutuhkan dapat terbantu dengan adanya Jejak Baik ini. Jejak Baik akan selalu jadi pengalaman seru aku buat ke depannya!! Sukses terus Jejak Baik 
-                  😘🤩💚🤍"
-                </blockquote>
+            </ul>
 
-                <div class="rating-wrapper">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
+          </div>
+        </section>
 
 
 
@@ -581,7 +594,47 @@
         </div>
       </section>
 
+      <!-- 
+       - #Worked With
+      -->
 
+      <!-- HTML -->
+<section class="section section-divider white worked-with" id="worked-with">
+  <div class="container">
+      <p class="section-subtitle">Collaborations</p>
+
+      <h2 class="h2 section-title tengah">
+        Apa Kata Mereka <span class="span">Tentang Kami</span>
+      </h2>
+
+      <div class="worked-with-grid">
+          <div class="worked-with-item">
+              <img src="./assets/images/partner1.jpg" alt="Partner 1" class="worked-with-img">
+          </div>
+          <div class="worked-with-item">
+              <img src="./assets/images/partner2.jpg" alt="Partner 2" class="worked-with-img">
+          </div>
+          <div class="worked-with-item">
+              <img src="./assets/images/partner3.jpg" alt="Partner 3" class="worked-with-img">
+          </div>
+          <div class="worked-with-item">
+              <img src="./assets/images/partner4.jpg" alt="Partner 4" class="worked-with-img">
+          </div>
+          <div class="worked-with-item">
+              <img src="./assets/images/partner4.jpg" alt="Partner 4" class="worked-with-img">
+          </div>
+          <div class="worked-with-item">
+              <img src="./assets/images/partner4.jpg" alt="Partner 4" class="worked-with-img">
+          </div>
+          <div class="worked-with-item">
+              <img src="./assets/images/partner4.jpg" alt="Partner 4" class="worked-with-img">
+          </div>
+          <div class="worked-with-item">
+              <img src="./assets/images/partner4.jpg" alt="Partner 4" class="worked-with-img">
+          </div>
+      </div>
+  </div>
+</section>
 
 
 
@@ -592,10 +645,10 @@
       <section class="section section-divider white blog" id="blog">
         <div class="container">
 
-          <p class="section-subtitle">Blog</p>
+          <p class="section-subtitle">Our Team</p>
 
           <h2 class="h2 section-title">
-            Blog <span class="span">Kami</span>
+            Jejak Baik <span class="span">Tam</span>
           </h2>
 
           <p class="section-text">
@@ -788,11 +841,11 @@
           </li>
 
           <li>
-            <p class="footer-list-item"><a href="tel:6282112780145">+62 821-1278-0145</a></p>
+            <p class="footer-list-item"><a href="tel:6282112780145">-</a></p>
           </li>
 
           <li>
-            <p class="footer-list-item"><a href="mailto:soraalgamaridnsolo">soraalgamaridnsolo@gmail.com</a></p>
+            <p class="footer-list-item"><a href="mailto:soraalgamaridnsolo">jejakbaikorg@gmail.com</a></p>
           </li>
 
           <li>
@@ -890,6 +943,7 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
 </body>
 
